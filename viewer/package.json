@@ -1,0 +1,15 @@
+{
+  "name": "glb-viewer-quicklook-viewer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "three.js viewer embedded in the GLB 3D model viewer extension. three itself is vendored under viewer/vendor (see scripts/vendor-three.mjs), so only esbuild is installed.",
+  "scripts": {
+    "build": "node scripts/build-viewer.mjs",
+    "vendor": "node scripts/vendor-three.mjs",
+    "dev": "node scripts/serve-viewer.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,18 @@
+three@0.186.1
+vendored by scripts/vendor-three.mjs
+files:
+  build/three.core.js
+  build/three.module.js
+  examples/jsm/controls/OrbitControls.js
+  examples/jsm/environments/RoomEnvironment.js
+  examples/jsm/libs/ktx-parse.module.js
+  examples/jsm/libs/meshopt_decoder.module.js
+  examples/jsm/libs/zstddec.module.js
+  examples/jsm/loaders/DRACOLoader.js
+  examples/jsm/loaders/GLTFLoader.js
+  examples/jsm/loaders/HDRLoader.js
+  examples/jsm/loaders/KTX2Loader.js
+  examples/jsm/math/ColorSpaces.js
+  examples/jsm/utils/BufferGeometryUtils.js
+  examples/jsm/utils/SkeletonUtils.js
+  examples/jsm/utils/WorkerPool.js

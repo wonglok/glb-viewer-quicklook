@@ -6,8 +6,55 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		000000000000000300000001 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* PreviewViewController.swift */; };
+		000000000000000300000002 /* ViewerWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* ViewerWebView.swift */; };
+		000000000000000300000003 /* GLBSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* GLBSchemeHandler.swift */; };
+		000000000000000300000004 /* viewer/dist in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* viewer/dist */; };
+		000000000000000300000005 /* GLBQuickLook.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000220 /* GLBQuickLook.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		000000000000000300000006 /* viewer/dist in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* viewer/dist */; };
+		000000000000000300000007 /* ViewerWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* ViewerWebView.swift */; };
+		000000000000000300000008 /* GLBSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* GLBSchemeHandler.swift */; };
+		000000000000000300000009 /* GLBPreviewLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* GLBPreviewLog.swift */; };
+		00000000000000030000000A /* GLBPreviewLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* GLBPreviewLog.swift */; };
+		00000000000000030000000B /* GLBFileIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003A /* GLBFileIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000200000007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000200000000;
+			remoteInfo = GLBQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000150000000 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				000000000000000300000005 /* GLBQuickLook.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		000000000000000000000031 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* ViewerWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWebView.swift; sourceTree = "<group>"; };
+		000000000000000000000033 /* GLBSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLBSchemeHandler.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000035 /* GLBQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GLBQuickLook.entitlements; sourceTree = "<group>"; };
+		000000000000000000000036 /* viewer/dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = viewer/dist; sourceTree = SOURCE_ROOT; };
+		000000000000000000000037 /* GLBPreviewLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLBPreviewLog.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000000000000000000000120 /* glb-viewer-quicklook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "glb-viewer-quicklook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000220 /* GLBQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GLBQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000039 /* GLBViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GLBViewer.entitlements; sourceTree = "<group>"; };
+		00000000000000000000003A /* GLBFileIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GLBFileIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -24,6 +71,11 @@
 			files = (
 			);
 		};
+		000000000000000230000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,16 +83,43 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* glb-viewer-quicklook */,
+				000000000000000000000030 /* GLBQuickLook */,
+				000000000000000000000040 /* AppSupport */,
+				000000000000000000000036 /* viewer/dist */,
 				000000000000000000000020 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000040 /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000038 /* Info.plist */,
+				000000000000000000000039 /* GLBViewer.entitlements */,
+				00000000000000000000003A /* GLBFileIcon.icns */,
+			);
+			path = AppSupport;
 			sourceTree = "<group>";
 		};
 		000000000000000000000020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				000000000000000000000120 /* glb-viewer-quicklook.app */,
+				000000000000000000000220 /* GLBQuickLook.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000030 /* GLBQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000031 /* PreviewViewController.swift */,
+				000000000000000000000032 /* ViewerWebView.swift */,
+				000000000000000000000033 /* GLBSchemeHandler.swift */,
+				000000000000000000000037 /* GLBPreviewLog.swift */,
+				000000000000000000000034 /* Info.plist */,
+				000000000000000000000035 /* GLBQuickLook.entitlements */,
+			);
+			path = GLBQuickLook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,8 +132,12 @@
 				000000000000000120000000 /* Sources */,
 				000000000000000130000000 /* Frameworks */,
 				000000000000000140000000 /* Resources */,
+				000000000000000150000000 /* Embed App Extensions */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				000000000000000200000006 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				000000000000000000000010 /* glb-viewer-quicklook */,
@@ -63,6 +146,21 @@
 			productName = MyApp;
 			productReference = 000000000000000000000120 /* glb-viewer-quicklook.app */;
 			productType = "com.apple.product-type.application";
+		};
+		000000000000000200000000 /* GLBQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000210000000 /* Build configuration list for PBXNativeTarget "GLBQuickLook" */;
+			buildPhases = (
+				000000000000000220000000 /* Sources */,
+				000000000000000230000000 /* Frameworks */,
+				000000000000000240000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = GLBQuickLook;
+			productName = GLBQuickLook;
+			productReference = 000000000000000000000220 /* GLBQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -76,6 +174,9 @@
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					000000000000000200000000 = {
+						CreatedOnToolsVersion = 27.1;
 					};
 				};
 			};
@@ -94,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				000000000000000100000000 /* glb-viewer-quicklook */,
+				000000000000000200000000 /* GLBQuickLook */,
 			);
 		};
 /* End PBXProject section */
@@ -102,6 +204,14 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				000000000000000300000006 /* viewer/dist in Resources */,
+				00000000000000030000000B /* GLBFileIcon.icns in Resources */,
+			);
+		};
+		000000000000000240000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				000000000000000300000004 /* viewer/dist in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -110,9 +220,29 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				000000000000000300000007 /* ViewerWebView.swift in Sources */,
+				000000000000000300000008 /* GLBSchemeHandler.swift in Sources */,
+				000000000000000300000009 /* GLBPreviewLog.swift in Sources */,
+			);
+		};
+		000000000000000220000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				000000000000000300000001 /* PreviewViewController.swift in Sources */,
+				000000000000000300000002 /* ViewerWebView.swift in Sources */,
+				000000000000000300000003 /* GLBSchemeHandler.swift in Sources */,
+				00000000000000030000000A /* GLBPreviewLog.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000200000006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000200000000 /* GLBQuickLook */;
+			targetProxy = 000000000000000200000007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000011000000 /* Debug configuration for PBXProject "glb-viewer-quicklook" */ = {
@@ -250,76 +380,118 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "glb-viewer-quicklook" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CY8MDF5N35;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = AppSupport/GLBViewer.entitlements;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AppSupport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loklok.glbviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "glb-viewer-quicklook" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CY8MDF5N35;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = AppSupport/GLBViewer.entitlements;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AppSupport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loklok.glbviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
+				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		000000000000000211000000 /* Debug configuration for PBXNativeTarget "GLBQuickLook" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GLBQuickLook/GLBQuickLook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CY8MDF5N35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GLBQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loklok.glbviewer.GLBQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000212000000 /* Release configuration for PBXNativeTarget "GLBQuickLook" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GLBQuickLook/GLBQuickLook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CY8MDF5N35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GLBQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loklok.glbviewer.GLBQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -339,6 +511,14 @@
 			buildConfigurations = (
 				000000000000000111000000 /* Debug configuration for PBXNativeTarget "glb-viewer-quicklook" */,
 				000000000000000112000000 /* Release configuration for PBXNativeTarget "glb-viewer-quicklook" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		000000000000000210000000 /* Build configuration list for PBXNativeTarget "GLBQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000211000000 /* Debug configuration for PBXNativeTarget "GLBQuickLook" */,
+				000000000000000212000000 /* Release configuration for PBXNativeTarget "GLBQuickLook" */,
 			);
 			defaultConfigurationName = Release;
 		};

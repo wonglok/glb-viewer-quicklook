@@ -1,0 +1,86 @@
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ---------------------------------------------------------------------------
+# Xcode
+# ---------------------------------------------------------------------------
+/build/
+/DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.xcdatamodeld/*.xcdevinfo
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# Swift Package Manager (not used today, but harmless if it ever is)
+.build/
+.swiftpm/
+
+# ---------------------------------------------------------------------------
+# Build & distribution artifacts
+# ---------------------------------------------------------------------------
+*.dmg
+*.pkg
+
+# The viewer bundle is generated from viewer/src by `npm run build`.
+# The Xcode project references it as a folder, so build it before xcodebuild —
+# see "Building" in README.md. viewer/vendor is NOT ignored: three and the
+# decoders are deliberately vendored so builds need no network.
+viewer/dist/
+
+# ---------------------------------------------------------------------------
+# Node
+# ---------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.esbuild/
+coverage/
+
+# ---------------------------------------------------------------------------
+# Python (scripts/make-icon.py)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Signing material and secrets
+# ---------------------------------------------------------------------------
+*.p8
+*.p12
+AuthKey_*.p8
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Editors and OS noise
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+*.log
