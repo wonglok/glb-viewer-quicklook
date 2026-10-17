@@ -1,5 +1,7 @@
 # GLB 3D model viewer
 
+<img width="1024" height="1024" alt="G-icon" src="https://github.com/user-attachments/assets/68980593-8726-4858-a5c8-22ebc8cdfb22" />
+
 Press **Space** on a `.glb` in Finder to preview it in 3D, or open one in the
 **GLB 3D model viewer** app. Either way the camera centres on the model and pulls back
 to fit its **bounding sphere**.
